@@ -17,11 +17,11 @@ while getopts ":v:t:n" opt; do
 
         # -t unity-build-target
         t)
-            buildTarget=$OPTARG >&2
-            unity_args+=" -buildTarget $buildTarget"
+            build_target=$OPTARG >&2
+            unity_args+=" -buildTarget $build_target"
             ;;
 
-        # -n always opens a new instance of the unity_app_namelication
+        # -n always opens a new instance of the app
         n)
             open_args+=" -n"
             ;;
